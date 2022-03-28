@@ -1,16 +1,19 @@
-html,
+:root {
+  --bodyBg: #f0f4f8;
+  --menuBg: #334d68;
+  --progressBar: #54d1db;
+}
+
 body {
-  padding: 0;
+  background: var(--bodyBg);
+}
+
+#menu {
+  background: var(--menuBg);
+}
+
+/* Overrides default styled accordion styles (too much bottom padding) */
+.ui.styled.accordion .content {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+  padding: 0.5em 1em 0.75em !important;
 }
