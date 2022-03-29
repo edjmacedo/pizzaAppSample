@@ -44,7 +44,7 @@ const CartSummary = ({ menuSummary, cart, handleOrder, order }: Props) => {
             onClick={() => router.push(`/cart?orderid=${orderId}`)}
           >
             <Icon name="cart" size="large" />
-            See more Details on your orders
+            <span>See more Details on your orders</span>
           </Label>
         </>
       )}
